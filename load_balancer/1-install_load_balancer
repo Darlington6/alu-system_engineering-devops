@@ -18,7 +18,7 @@ frontend desmond-frontend
 backend desmond-backend
         balance roundrobin
         server 6168-web-01 54.224.21.202:80 check
-        server 6168-web-02 100.26.146.29 check
+        server 6168-web-02 100.26.146.29:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
