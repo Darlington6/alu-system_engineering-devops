@@ -14,7 +14,7 @@ server_config=\
 frontend desmond-frontend
         bind *:80
         mode http
-        default_backend oreste-backend
+        default_backend desmond-backend
 backend desmond-backend
         balance roundrobin
         server 6168-web-01 54.224.21.202:80 check
